@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Phpto;
-use App\Http\Requests\StorePhptoRequest;
-use App\Http\Requests\UpdatePhptoRequest;
+use App\Models\Photo;
+use App\Http\Requests\StorePhotoRequest;
+use App\Http\Requests\UpdatePhotoRequest;
 
-class PhptoController extends Controller
+class PhotoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class PhptoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorePhptoRequest  $request
+     * @param  \App\Http\Requests\StorePhotoRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorePhptoRequest $request)
+    public function store(StorePhotoRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class PhptoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Phpto  $phpto
+     * @param  \App\Models\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function show(Phpto $phpto)
+    public function show(Photo $photo)
     {
         //
     }
@@ -53,10 +53,10 @@ class PhptoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Phpto  $phpto
+     * @param  \App\Models\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Phpto $phpto)
+    public function edit(Photo $photo)
     {
         //
     }
@@ -64,11 +64,11 @@ class PhptoController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatePhptoRequest  $request
-     * @param  \App\Models\Phpto  $phpto
+     * @param  \App\Http\Requests\UpdatePhotoRequest  $request
+     * @param  \App\Models\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatePhptoRequest $request, Phpto $phpto)
+    public function update(UpdatePhotoRequest $request, Photo $photo)
     {
         //
     }
@@ -76,10 +76,10 @@ class PhptoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Phpto  $phpto
+     * @param  \App\Models\Photo  $photo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Phpto $phpto)
+    public function destroy(Photo $photo)
     {
         //
     }

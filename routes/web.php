@@ -25,6 +25,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::resource('article',\App\Http\Controllers\ArticleController::class);
+Route::resource('category',\App\Models\Category::class);
+Route::resource('photo',\App\Http\Controllers\PhotoController::class);
+
 Route::middleware("auth")->group(function(){
     Route::view("test","test")->name('test');
     Route::post("test",[TestController::class,'test'])->name('test');

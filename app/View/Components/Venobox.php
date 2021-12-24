@@ -13,7 +13,7 @@ class Venobox extends Component
      *
      * @return void
      */
-    public function __construct($big,$small,$gall)
+    public function __construct($big=null,$small,$gall=null)
     {
         $this->big=$big;
         $this->gall=$gall;
